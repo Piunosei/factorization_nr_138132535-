@@ -90,8 +90,6 @@ mpz_init_set_str (TEST, "390644893234047643", 10);
  mpz_set(N,TEST);
 */
  
-/*[a^(M^2)-a] mod (a*M^2)=X ,gcd(X,M)=p*/
-/*M=b*N*/
  while(1){
 mpz_mul(M,b,N);
 mpz_mul(M2,M,M);
