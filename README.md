@@ -2,15 +2,33 @@
 
 Integer factorization
 
-M=b*N
+Input N (number to factor)
 
+P=1
 
-(a^(M^2)-a) mod (a*M^2)=X 
+a=2
 
-gcd(X,M)=p
+b=1
 
+while( P==1 || P==N ){
 
-gcd(N,p)=P
+	M=b*N
+	
+	while(a < max_a){
+
+		X= (a^(M^2)-a) mod (a*M^2)
+
+		p=gcd(X,M)
+
+		P=gcd(N,p)
+
+		a=a+2
+	}
+	a=2
+	b++
+}
+
+Output P (factor of N)
 
 
 version 2 is much faster
