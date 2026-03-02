@@ -22,7 +22,7 @@ while( P==1 || P==N ){
 
 		P=gcd(N,p)
 
-		a=a+2
+		a++
 	}
 	a=2
 	b++
@@ -31,4 +31,4 @@ while( P==1 || P==N ){
 Output P (factor of N)
 
 
-version 2 is much faster
+version 2_1 is much faster
