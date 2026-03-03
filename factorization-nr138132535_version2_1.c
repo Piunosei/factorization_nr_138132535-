@@ -34,10 +34,9 @@ int main() {
 	// tmp = tmp - 1
 	mpz_sub_ui(tmp, tmp, 1);
 
-	// p = gcd(result, M)
-	mpz_gcd(p, tmp, M);
+	// P = gcd(tmp, N)
+	mpz_gcd(P, tmp, N);
 
-	mpz_gcd(P,N,p);
 	
     if(mpz_cmp_ui(P,1)!=0 && mpz_cmp(N,P)!=0){
        gmp_printf("P= %Zd\na=%Zd\nb=%Zd\n ",P,a,b);
@@ -55,3 +54,4 @@ int main() {
     mpz_clears(a, M, M2, mod, tmp, result, p, NULL);
     return 0;
 }
+
