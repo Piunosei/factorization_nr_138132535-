@@ -16,7 +16,7 @@ while( P==1 || P==N ){
 	
 	while(a < max_a){
 
-		X= (a^(M^2)-a) mod (a*M^2)
+		X= (a^(M^2-1)-1) mod (N)
 
 		P=gcd(X,N)
 
@@ -29,4 +29,4 @@ while( P==1 || P==N ){
 Output P (factor of N)
 
 
-version 2_1 is much faster
+version 2_2 is much faster
