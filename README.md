@@ -18,9 +18,7 @@ while( P==1 || P==N ){
 
 		X= (a^(M^2)-a) mod (a*M^2)
 
-		p=gcd(X,M)
-
-		P=gcd(N,p)
+		P=gcd(X,N)
 
 		a++
 	}
